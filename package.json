@@ -2,9 +2,10 @@
   "name": "vtuber",
   "version": "1.0.0",
   "scripts": {
-    "build": "tsc -p Project/Samples/TypeScript/Demo"
+    "build": "tsc -p Project/Samples/TypeScript/Demo && cpx Project/Samples/TypeScript/Demo/index.html Project/Samples/TypeScript/Demo/dist && cpx Project/Samples/Resources/**/* Project/Samples/TypeScript/Demo/dist"
   },
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "cpx": "^1.5.0"
   }
 }
